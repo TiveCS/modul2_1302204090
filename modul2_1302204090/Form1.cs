@@ -19,7 +19,7 @@ namespace modul2_1302204090
 
         private void btn_num_Click(object sender, EventArgs e)
         {
-
+            // Mendapatkan angka dari tombol yang ditekan
             Button btn = (Button)sender;
             string stringNumber = btn.Text;
 
