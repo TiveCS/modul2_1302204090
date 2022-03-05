@@ -40,7 +40,7 @@
             this.btn_calculate = new System.Windows.Forms.Button();
             this.btn_num_0 = new System.Windows.Forms.Button();
             this.btn_operation_plus = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_calculation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_num_1
@@ -51,6 +51,7 @@
             this.btn_num_1.TabIndex = 0;
             this.btn_num_1.Text = "1";
             this.btn_num_1.UseVisualStyleBackColor = true;
+            this.btn_num_1.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_2
             // 
@@ -60,6 +61,7 @@
             this.btn_num_2.TabIndex = 1;
             this.btn_num_2.Text = "2";
             this.btn_num_2.UseVisualStyleBackColor = true;
+            this.btn_num_2.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_3
             // 
@@ -69,6 +71,7 @@
             this.btn_num_3.TabIndex = 2;
             this.btn_num_3.Text = "3";
             this.btn_num_3.UseVisualStyleBackColor = true;
+            this.btn_num_3.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_6
             // 
@@ -78,6 +81,7 @@
             this.btn_num_6.TabIndex = 5;
             this.btn_num_6.Text = "6";
             this.btn_num_6.UseVisualStyleBackColor = true;
+            this.btn_num_6.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_5
             // 
@@ -87,6 +91,7 @@
             this.btn_num_5.TabIndex = 4;
             this.btn_num_5.Text = "5";
             this.btn_num_5.UseVisualStyleBackColor = true;
+            this.btn_num_5.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_4
             // 
@@ -96,6 +101,7 @@
             this.btn_num_4.TabIndex = 3;
             this.btn_num_4.Text = "4";
             this.btn_num_4.UseVisualStyleBackColor = true;
+            this.btn_num_4.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_9
             // 
@@ -105,6 +111,7 @@
             this.btn_num_9.TabIndex = 8;
             this.btn_num_9.Text = "9";
             this.btn_num_9.UseVisualStyleBackColor = true;
+            this.btn_num_9.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_8
             // 
@@ -114,6 +121,7 @@
             this.btn_num_8.TabIndex = 7;
             this.btn_num_8.Text = "8";
             this.btn_num_8.UseVisualStyleBackColor = true;
+            this.btn_num_8.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_num_7
             // 
@@ -123,6 +131,7 @@
             this.btn_num_7.TabIndex = 6;
             this.btn_num_7.Text = "7";
             this.btn_num_7.UseVisualStyleBackColor = true;
+            this.btn_num_7.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_calculate
             // 
@@ -132,6 +141,7 @@
             this.btn_calculate.TabIndex = 11;
             this.btn_calculate.Text = "=";
             this.btn_calculate.UseVisualStyleBackColor = true;
+            this.btn_calculate.Click += new System.EventHandler(this.btn_calculate_Click);
             // 
             // btn_num_0
             // 
@@ -141,6 +151,7 @@
             this.btn_num_0.TabIndex = 10;
             this.btn_num_0.Text = "0";
             this.btn_num_0.UseVisualStyleBackColor = true;
+            this.btn_num_0.Click += new System.EventHandler(this.btn_num_Click);
             // 
             // btn_operation_plus
             // 
@@ -150,15 +161,15 @@
             this.btn_operation_plus.TabIndex = 9;
             this.btn_operation_plus.Text = "+";
             this.btn_operation_plus.UseVisualStyleBackColor = true;
+            this.btn_operation_plus.Click += new System.EventHandler(this.btn_num_Click);
             // 
-            // label1
+            // label_calculation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 16);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Calculate: ";
+            this.label_calculation.AutoSize = true;
+            this.label_calculation.Location = new System.Drawing.Point(29, 44);
+            this.label_calculation.Name = "label_calculation";
+            this.label_calculation.Size = new System.Drawing.Size(0, 16);
+            this.label_calculation.TabIndex = 12;
             // 
             // CalculatorApp
             // 
@@ -166,7 +177,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(323, 324);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_calculation);
             this.Controls.Add(this.btn_calculate);
             this.Controls.Add(this.btn_num_0);
             this.Controls.Add(this.btn_operation_plus);
@@ -202,7 +213,7 @@
         private System.Windows.Forms.Button btn_calculate;
         private System.Windows.Forms.Button btn_num_0;
         private System.Windows.Forms.Button btn_operation_plus;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_calculation;
     }
 }
 
